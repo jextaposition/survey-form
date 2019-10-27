@@ -1,0 +1,222 @@
+<!DOCUMENT html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko">
+  </head>
+<body>
+<main>
+  <h1 id="title">
+    Your Music Style Survey
+  </h1>
+    <p id="description">
+      This survey will be used to get a glimpse into your mind to determine whether
+      or not you have good musical taste. We would also like to determine your preferred musical instrument.
+    </p>
+<form id="survey-form">
+  <div class="rowTab">
+   <div class="labels">
+   <label id="name-label" for="name">
+     * Name:
+   </label>
+   </div>
+   <div class="rightTab">
+     <input autofocus type= "text" name="name" id="name" class="input-field"
+            placeholder="Enter your name" required>
+    </div>
+    <div class="rowTab">
+    <div class="labels">
+      <label id="email-label" for="email">* Email:
+      </label>
+    <div class="rightTab">
+      <input type="email" name="email" id="email" class="input-field"
+             required placeholder="Enter your Email">
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+      <label id="number-label" for="age">* Age:
+      </label>
+      </div>
+    <div class="rightTab">
+      <input type="number" name="age" id="number" min="16" max="100"
+             class="input-field" placeholder="Age">
+    </div>
+    <div class="rowTab">
+    <div class="labels">
+       <label for="currentPos">
+          How often do you listen to music?
+       </label>
+    </div>
+    <div class="rightTab">
+      <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled selected value> Select</option>
+        <option value="everyday">Everday</option>
+        <option value="everyweek">Every Week</option>
+        <option value="everyhour">Every Hour</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">
+         What is your favorite way of listening to music?
+        </label>
+    </div>
+    <div class="rightTab">
+        <ul style="list-style:none;">
+          <li class="radio">
+          <label>
+          The radio
+            <input name="radio-buttons" value="1"
+                   type="radio" class="userRatings">
+          </label>
+          </li>
+          <li class="radio">
+          <label>
+          Your cellphone
+            <input name="radio-buttons" value="2"
+                   type="radio" class="usesrRatings">
+          </label>
+          </li>
+          <li class="radio">
+          <label>
+          MP3 player
+             <input name="radio-buttons" value="3"
+                    type="radio" class="userRatings">
+          </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+       <div class="labels">
+        <label for="most-like">Choose the instrument would you like to learn:
+        </label>
+        </div>
+    <div class="rightTab">
+        <select id="most-like"
+                name="mostLike" class="dropdown">
+        <option disabled selected value>
+          Select an option
+        </option>
+        <option value="piano">
+          Piano
+        </option>
+        <option value="guitar">
+          Guitar
+        </option>
+        <option value="bass">
+          Bass
+        </option>
+        <option value="saxophone">
+          Saxophone
+        </option>
+        <option value="flute">
+          Flute
+        </option>
+        <option value="drums">
+          Drums
+        </option>
+        <option value="violin">
+          Violin
+        </option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+       <div class="labels">
+         <label for="prefernces">
+         What is your favorite genre of music?
+         <br>
+         (Check all that apply):
+         </label>
+        </div>
+      <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="1" type="checkbox" class="userRatings">
+              Classical
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="2" type="checkbox" class="userRatings">
+              Christian
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="3" type="checkbox" class="userRatings">
+              Gospel
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="4" type="checkbox" class="userRatings">
+              R&B
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="5" type="checkbox" class="userRatings">
+              Neo-soul
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="6" type="checkbox" class="userRatings">
+              Jazz
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="7" type="checkbox" class="userRatings">
+              Blues
+              </label>
+              </li>
+              <li class="checkbox">
+              <label>
+              <input name="prefer"
+              value="8" type="checkbox" class="userRatings">
+              Rock and Roll
+              </label>
+              </li>
+           </ul>
+        </div>
+    </div>
+
+    <div class="rowTab">
+       <div class="labels">
+       <label for="comments">
+        Any Comments or Suggestions?
+       </label>
+       </div>
+     <div class="rightTab">
+       <textarea id="comments"
+          class="input-field"
+          style="height:50px;resize:vertical;" name="comment"
+          placeholder="Enter your comment here...">
+       </textarea>
+       </div>
+      </div>
+    <button id="submit" type="submit">
+      Submit
+    </button>
+
+  </div>
+
+</form>
+</main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+      </script>
+  </body>
+</html>
